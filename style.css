@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 768px;
+    width: 768px;
+}
+
+.row {
+    height: 6.25%;
+    width : 100%;
+    display: flex;
+}
+
+.block {
+    height: 100%;
+    width: 6.25%;
+    border: solid 1px black;
+}
+
+.colored {
+    background-color: black;
+}
