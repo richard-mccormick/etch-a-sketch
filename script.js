@@ -4,7 +4,7 @@ const container = document.querySelector("#container");
 //const row = document.createElement("div");
 //const block = document.createElement("div");
 //row.classList.add("row");
-let gridSize = 77;
+let gridSize = 20;
 let sizeModifier = (1/gridSize)*100 + "%";
 
 function fillRow(divName){
@@ -33,4 +33,24 @@ function makeGrid(containerName){
 
 makeGrid(container);
 
+const gridInput = document.querySelector("#gridInput");
+const button = document.querySelector("#button");
+
+function deleteGrid () {
+    while(container.hasChildNodes()){
+        container.removeChild(container.firstChild);
+    }
+
+}
+
+button.addEventListener("click", () => {
+    const gridInput = document.querySelector("#gridInput").value;
+    if(gridInput > 100){
+        return;
+    }
+    gridSize = gridInput;
+    sizeModifier = (1/gridSize)*100 + "%";
+    deleteGrid();
+    makeGrid(container);
+})
 

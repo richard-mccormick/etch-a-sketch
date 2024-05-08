@@ -3,6 +3,23 @@
     padding: 0;
     font-family: roboto, sans-serif;
     box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+
+.title-card {
+    text-align: center;
+    background-color: white;
+    width: 768px;
+    padding: 32px;
+    box-sizing: content-box;
 }
 
 .container {
@@ -10,6 +27,9 @@
     flex-direction: column;
     height: 768px;
     width: 768px;
+    box-sizing: content-box;
+    padding: 32px;
+    background-color: white;
 }
 
 .row {
@@ -24,4 +44,26 @@
 
 .colored {
     background-color: black;
+}
+
+.grid-sizing {
+    width: 832px;
+    text-align: center
+}
+
+.constraint-text {
+    padding-top: 2px;
+    font-size: 10px;
+}
+
+input{
+    width: 48px;
+    height: 24px;
+    text-align: center;
+}
+
+.grid-button {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
 }

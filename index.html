@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Etch-a-sketch</title>
 </head>
 <body>
+    <h1 class="title-card">ETCH-A-SKETCH</h1>
+    <div class="grid-sizing">
+        <label for="gridInput">Grid size: </label>
+        <input type="number" max="100" id="gridInput" name="grid-text">
+        <button id="button" class="grid-button">Go</button>
+        <div class="constraint-text">(max size is 100x100)</div>
+    </div>
     <div id="container" class="container">
     </div>
 </body>
